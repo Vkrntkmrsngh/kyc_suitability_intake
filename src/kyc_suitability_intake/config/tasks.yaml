@@ -1,0 +1,61 @@
+extract_profile_task:
+  description: >
+    You are given raw intake notes for {client_name}. Extract a structured KYC/suitability profile.
+
+    Intake notes:
+    {intake_text}
+
+    Rules:
+    - Only extract facts stated or strongly implied by the intake notes.
+    - If something is missing or unclear, put it in "missing_information".
+    - Do NOT make investment recommendations.
+  expected_output: >
+    A JSON object with:
+    {
+      "client_profile": {
+        "goals": [],
+        "time_horizon": "",
+        "risk_tolerance_signals": [],
+        "liquidity_needs": "",
+        "constraints": [],
+        "preferences": [],
+        "notes": []
+      },
+      "missing_information": [],
+      "assumptions_made": []
+    }
+  agent: intake_extractor
+
+risk_profile_task:
+  description: >
+    Using the extracted profile from context, identify:
+    - inconsistencies or ambiguity,
+    - suitability red flags (documentation gaps),
+    - a neutral preliminary risk profile label (Conservative / Balanced / Growth) *with rationale*.
+
+    Output must be neutral and review-friendly; no product advice.
+  expected_output: >
+    A JSON object with:
+    {
+      "preliminary_risk_profile": "",
+      "rationale": [],
+      "red_flags": [],
+      "follow_up_questions": []
+    }
+  agent: risk_profiler
+
+advisor_summary_task:
+  description: >
+    Create an advisor-ready markdown summary for {client_name} based on all prior context.
+
+    Include sections:
+    1) Client Snapshot (bullets)
+    2) Goals & Horizon
+    3) Constraints & Preferences
+    4) Risk Notes (neutral)
+    5) Missing Information / Follow-up Questions
+  expected_output: >
+    A markdown document formatted for an advisor to review quickly (no code fences).
+  agent: advisor_summary_writer
+  markdown: true
+  output_file: advisor_brief.md

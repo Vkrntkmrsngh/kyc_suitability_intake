@@ -1,0 +1,26 @@
+[project]
+name = "kyc_suitability_intake"
+version = "0.1.0"
+description = "kyc_suitability_intake using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "crewai[tools]==1.7.2"
+]
+
+[project.scripts]
+kyc_suitability_intake = "kyc_suitability_intake.main:run"
+run_crew = "kyc_suitability_intake.main:run"
+train = "kyc_suitability_intake.main:train"
+replay = "kyc_suitability_intake.main:replay"
+test = "kyc_suitability_intake.main:test"
+run_with_trigger = "kyc_suitability_intake.main:run_with_trigger"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+
+[tool.crewai]
+type = "crew"
