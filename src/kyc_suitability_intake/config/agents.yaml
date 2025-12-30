@@ -15,7 +15,10 @@ risk_profiler:
   backstory: >
     You are meticulous about suitability constraints and documentation quality.
     You provide neutral risk observations and missing-info questions, not product advice.
-
+  tools:
+    - serper_search_tool
+    - kyc_completeness_tool
+    
 advisor_summary_writer:
   role: >
     Advisor Summary Writer

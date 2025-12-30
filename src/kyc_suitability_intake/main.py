@@ -10,7 +10,7 @@ def run():
 
     result = KycSuitabilityIntakeCrew().crew().kickoff(
         inputs={
-            "client_name": "Sample Client",
+            "client_name": "Nancy Peterson",
             "intake_text": sample_intake
         }
     )

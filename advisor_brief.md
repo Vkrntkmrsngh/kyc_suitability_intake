@@ -1,34 +1,34 @@
 # Client Snapshot
-- **Goals:** Retirement in ~12 years
-- **Time Horizon:** Mixed
-- **Risk Tolerance Signals:** Prefers stability; uncomfortable with large drawdowns
-- **Liquidity Needs:** Requires emergency fund liquidity
-- **Constraints:** Upcoming home purchase in 2 years
-- **Preferences:** None specified
-- **Notes:** 
-  - Existing 401(k) and brokerage account
-  - No mention of tax constraints
-  - No explicit constraints on industries
+- **Name**: Nancy Peterson
+- **Goals**:
+  - Retirement in approximately **12 years**
+  - Upcoming home purchase in **2 years**
+- **Time Horizon**: *Mixed*
+- **Risk Tolerance**:
+  - Prefers **stability**
+  - Uncomfortable with **large drawdowns**
+- **Liquidity Needs**: Needs **emergency fund liquidity**
+- **Notes**:
+  - Client met advisor for initial *discovery*.
+  - Has existing **401(k)** and **brokerage account**.
+  - No mention of **tax constraints**.
+  - No explicit constraints on **industries**.
 
 # Goals & Horizon
-- Aim to retire in approximately 12 years, indicating a long-term investment strategy.
-- Mixed time horizon necessitates careful consideration of asset allocation to balance both short-term (home purchase in 2 years) and long-term goals (retirement).
+- Focus on *retirement planning* over a **12-year** timeline.
+- Immediate need for funds related to a **home purchase** within **2 years**.
 
 # Constraints & Preferences
-- Upcoming home purchase within 2 years limits investment strategies to those that prioritize liquidity and capital preservation.
-- No specified preferences for types of investments, but a conservative risk profile is indicated.
+- **Constraints**: None explicitly listed
+- **Preferences**: None explicitly listed
 
 # Risk Notes
-- **Preliminary Risk Profile:** Conservative  
-  - The client's low risk tolerance reflects a preference for stability, as shown by the discomfort with large drawdowns.
-  - The upcoming home purchase and need for an emergency fund suggest limiting market exposure to reduce volatility.
-  
-- **Red Flags:**
-  - Mixed time horizon could lead to inconsistencies in investment strategies, requiring careful alignment of short and long-term goals.
-  - Lack of explicit constraints on industries may expose the client to sectors that could be misaligned with their conservative risk expectations.
+- Preliminary risk profile is **Conservative**:
+  - Client's preference for stability and discomfort with large drawdowns indicates a conservative character.
+  - Focus on liquidity due to emergency fund suggests a cautious investment approach.
 
 # Missing Information / Follow-up Questions
-- Can you clarify what you mean by 'mixed' time horizon?
-- What is the size of your emergency fund, and do you have other liquidity sources?
-- Are there any specific industries or sectors you wish to avoid?
-- Do you have any existing tax considerations that should be accounted for in your investment strategy?
+- What is the *specific liquidity amount* needed for the emergency fund?
+- Can you provide *details* on the current balances of your **401(k)** and **brokerage account**?
+- Are there any *tax constraints* that might influence your investment decisions?
+- What *industries* or types of investments do you prefer or wish to avoid?

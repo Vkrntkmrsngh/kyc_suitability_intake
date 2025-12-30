@@ -28,15 +28,24 @@ extract_profile_task:
 
 risk_profile_task:
   description: >
-    Using the extracted profile from context, identify:
-    - inconsistencies or ambiguity,
-    - suitability red flags (documentation gaps),
-    - a neutral preliminary risk profile label (Conservative / Balanced / Growth) *with rationale*.
+    Using the extracted profile from context, do the following:
 
-    Output must be neutral and review-friendly; no product advice.
+    1) Run the KYC Completeness Checker tool on the extracted profile and capture the missing fields.
+    2) If key fields are missing or ambiguous, use the Serper search tool to quickly confirm
+       a neutral definition / checklist for KYC/suitability intake fields (do not cite investment advice).
+       Keep it short and use it only to improve the follow-up questions.
+
+    Then produce:
+    - inconsistencies or ambiguity,
+    - documentation red flags (gaps),
+    - a neutral preliminary risk profile label (Conservative / Balanced / Growth) with rationale,
+    - a short follow-up questions list.
+
+    No product recommendations.
   expected_output: >
     A JSON object with:
     {
+      "completeness_check": "",
       "preliminary_risk_profile": "",
       "rationale": [],
       "red_flags": [],
